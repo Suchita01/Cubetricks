@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
+html {
+  scroll-behavior:smooth;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+ 
+a{
+color: #0d6efd;
+text-decoration:none!important;
+}
+
+p{
+font-family: 'Muli', sans-serif;
+font-style: normal;
+font-weight: 100;
+font-size:16px;
+color:#7B7F9E;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif!important;
+
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding:0px!important;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #ffff!important;
+}
+
+.card-img, .card-img-top {
+   border-top-left-radius:0px!important;
+  border-top-right-radius:0px!important;
+}
+
+/*** Navbar ***/
+
+.nav-link {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff!important;
+}
+
+.navbar-brand img{
+  width:200px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #7b7f9e!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #fff!important;
+}
+
+/** All sections Height **/
+
+#know_more{
+  padding:100px 0px;
+}
+
+#about{
+  height: 100vh;
+}
+
+#iphone{
+  height: 100vh;
+}
+
+#services{
+  padding:100px 0px;
+}
+
+#work{
+  padding:100px 0px;
+}
+
+
+
+/*** Hero Section ***/
+
+.banner{
+  background-image: url('img/banner/bg.jpg')center center cover no-repeat fixed;
+  position: relative;
+  background-position: center center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+  }
+
+.banner img{
+  width: 100%;
+}
+
+.banner .banner_text h1 {
+  position: absolute;
+  top: 23%;
+  font-style: normal;
+  font-weight: 600;
+  font-size:60px;
+}
+
+.banner .banner_text p {
+    position: absolute;
+    top:43%;
+    font-weight: 100;
+    font-size:16px;
+    letter-spacing: 0.02em;
+    line-height:1.25;
+    color:#7B7F9E;
+}
+
+/***** know more about us****/
+
+
+.macbook img{
+  display: block;
+   width:100%;
+}
+
+.macbook{
+  animation: mac 2s linear infinite;*
+}
+
+@keyframes mac{
+
+  0%{
+    transform:translateY(-10px); 
+    }
+
+  50%{
+    transform:translateY(+10px); 
+    }
+
+  100%{
+    transform:translateY(-10px); 
+      }
+  }
+
+.know_heading{
+  text-align: center;
+  font-size:40px;
+    letter-spacing: 0.02em;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #fff;
+}
+
+.know_para{
+    font-size: 16px;
+    line-height: 1.45;
+    color: #7B7F9E;
+    text-align:center;
+    letter-spacing: 0.02em;
+    padding:0px 23% 0px;
+}
+
+.service_para{
+    font-size: 16px;
+    line-height: 1.45;
+    color: #7B7F9E;
+    text-align:center;
+    letter-spacing: 0.02em;
+    padding:0px 15% 0px;
+}
+
+/*** section-1 ***/
+
+  .buttonfx {
+  color:#fff;
+  outline: none;
+  background: transparent;
+  border: none;
+  letter-spacing: 0.0625em;
+  padding:15px 45px;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none; 
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background:#2E43FF; 
+  z-index: -1;
+  transform: translate3D(0,-100%,0);
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: #1E202C;
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color:#FFF;
+
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+.slideleft:after {
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%, 0, 0);
+}
+
+.slideleft:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+
+.button{
+  background-color:#171822;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.btn {
+    border-radius:0px!important;
+  }
+
+/** about **/
+
+.about .content h1{
+  font-size:40px;
+  letter-spacing: 0.02em;
+  line-height:1.25;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about .about_para{
+  font-size:16px;
+  line-height:1.45;
+  color: #7B7F9E;
+}
+
+
+/** mobile iphone **/
+
+.iphone .content h1{
+  font-size:40px;
+   letter-spacing: 0.02em;
+    line-height:1.25;
+    font-weight: 700;
+  color: #fff;
+}
+
+.iphone .iphone_para{
+font-size:16px;
+line-height:1.45;
+color: #7B7F9E;
+}
+
+.macphone img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.macphone{
+  animation: iphone 2s linear infinite;
+}
+
+@keyframes iphone{
+
+  0%{
+    transform:translateY(-10px); 
+    }
+
+  50%{
+    transform:translateY(+10px); 
+    }
+
+  100%{
+    transform:translateY(-10px); 
+      }
+  }
+
+
+.btn{
+  background-color:#1E202C!important;
+  border: none;
+  font-size:14px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight:500;
+  text-align: center;
+  padding:20px 55px;
+  font-size: 1rem;
+  line-height:1.55;
+  color: #7B7F9E;
+    
+  }
+
+  .btn:hover{
+  background-color: #3EC6E4!important;
+  border: none;
+  font-size:14px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight:500;
+  text-align: center;
+  padding:20px 55px;
+  font-size: 1rem;
+  line-height:1.55;
+  color: #202020;
+
+  }
+
+.service_title h1{
+	font-size:40px;
+	 letter-spacing: 0.02em;
+    line-height:1.25;
+    font-weight: 700;
+	color: #fff;
+}
+
+/**Services***/
+
+
+
+.card{
+  border-radius:0px!important;
+  border:0px;
+  
+}
+
+.cardfull:hover{
+  background-color:#191B28!important;
+}
+
+/** Our Work ***/
+
+
+.inner{
+  overflow:hidden;
+}
+
+.inner img{
+  transition: all 1s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.1);
+}
+
+
+/** clients **/
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/**
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}**/
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:#7B7F9E;
+  border-radius: 50%;
+  display: inline-block;
+  transition:0.2s ease;
+}
+
+.active, .dot:hover {
+    background-color: #fff;
+}
+
+
+/** footer **/
+
+.social-links a {
+  font-size: 16px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    padding-top: 10px;
+    margin: 0 3px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+
+}
+
+.icofont-facebook:hover {
+  color: #3b5998;
+ }
+
+.icofont-twitter:hover{
+  color: #00acee;
+  
+}
+
+.icofont-instagram:hover{
+  color:#3f729b;
+  
+}
+.icofont-dribble:hover{
+  color: #ea4c89;
+  
+}
+
+.icofont-linkedin:hover{
+  color:#0e76a8;
+
+}
+
+.icofont-pinterest:hover{
+ color:#E60023;
+
+}
+
+.icofont-behance:hover{
+color:#053eff;
+
+}
+
+.footer {
+    padding: 130px 0px;
+}
+
+/** icons ***/
+
+.card-body{
+   
+}
+
+.card-body .box {
+  display: inline;
+ }
+
+
+.box i {
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+
+/** resources page **/
+
